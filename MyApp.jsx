@@ -1,5 +1,5 @@
 
-function Header({ title }) {
+function Header({ title, children }) {
     console.log("Header is rendering.");
 
     const [classHeader, setClassHeader] = React.useState("app-header-aqua");
@@ -12,11 +12,16 @@ function Header({ title }) {
         setClassHeader("app-header-red");
     };
     
-    return <div className={classHeader} onClick={clickHandler}> Header: {title} </div>
+    return <div className={classHeader} onClick={clickHandler}> Header: {title},
+            <div>Children: {children}</div>
+        </div>
 }
 
 function MyApp() {
     return (<>
-        <Header title={'Hello React Title'}></Header><div>Welcome to React Pre Process code page</div>
+        <Header title={'Hello React Title'}>
+            <span className="app-span">Hello from patent</span>
+        </Header>
+        <div>Welcome to React Pre Process code page</div>
     </>)
 }
