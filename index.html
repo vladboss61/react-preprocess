@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Pre Process</title>
+</head>
+<body>
+    <script src="./node_modules/react/umd/react.production.min.js"></script>
+    <script src="./node_modules/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="./MyApp.js"></script>
+    <div id="app-root"></div>
+    <script>
+        const root = ReactDOM.createRoot(document.getElementById('app-root'));
+        root.render(MyApp());
+    </script>
+</body>
+</html>

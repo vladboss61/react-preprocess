@@ -1,0 +1,20 @@
+{
+  "name": "react-preprocess",
+  "version": "1.0.0",
+  "description": "react dev example",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --plugins @babel/plugin-transform-react-jsx MyApp.jsx > MyApp.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "babel": "^6.23.0"
+  }
+}
