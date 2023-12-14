@@ -3,7 +3,6 @@ function Header({ title }) {
     console.log("Header is rendering.");
 
     const [classHeader, setClassHeader] = React.useState("app-header-aqua");
-
     React.useEffect(() => {
         console.log('useEffect hook');
     }, []);
