@@ -6,10 +6,18 @@
     <title>React Pre Process</title>
 </head>
 <body>
+    <style>
+        .app-header {
+            color: aqua;
+        }
+    </style>
+
     <script src="./node_modules/react/umd/react.production.min.js"></script>
     <script src="./node_modules/react-dom/umd/react-dom.production.min.js"></script>
     <script src="./MyApp.js"></script>
+    
     <div id="app-root"></div>
+    
     <script>
         const root = ReactDOM.createRoot(document.getElementById('app-root'));
         const app = MyApp();

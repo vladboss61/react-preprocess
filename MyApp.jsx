@@ -1,6 +1,11 @@
 
 function Header({ title }) {
-    return <div> Header: {title} </div>
+
+    const clickHandler = (e) => { 
+        console.log('click me!');
+    }
+
+    return <div className="app-header" onClick={clickHandler}> Header: {title} </div>
 }
 
 function MyApp() {
