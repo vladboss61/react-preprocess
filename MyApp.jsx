@@ -106,7 +106,7 @@ function MyApp() {
             
             <button onClick={(e) => {
                 console.log("Data from formData.");
-                console.log(form);
+                console.log(formData);
             }}> Submit </button>
             
         </div>
