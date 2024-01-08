@@ -21,6 +21,7 @@ const employmentEnum = {
   PartTime: 'part-time'
 };
 function MyApp() {
+  console.log("React", React);
   const formData = {
     firstName: "Vladyslav",
     employment: employmentEnum.PartTime,
@@ -97,7 +98,7 @@ function MyApp() {
   }), /*#__PURE__*/React.createElement("button", {
     onClick: e => {
       console.log("Data from formData.");
-      console.log(form);
+      console.log(formData);
     }
   }, " Submit ")), /*#__PURE__*/React.createElement("div", null, "Welcome to React Pre Process code page"));
 }

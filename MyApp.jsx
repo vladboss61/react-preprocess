@@ -24,6 +24,7 @@ const employmentEnum = {
 }
 
 function MyApp() {
+    console.log("React", React);
 
     const formData = {
             firstName: "Vladyslav",
